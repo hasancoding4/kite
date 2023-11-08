@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(49, 46, 46);
+}
+.kite{
+    width: 0;
+    height: 0;
+    border: 100px solid orange;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    border-radius: 8px;
+    transform: rotate(45deg);
+    position: relative;
+    margin-top: 100px;
+    top: 30%;
+    left: 20%;
+    background-color: white;
+}
+.kite::after{
+    content: '';
+    width: 0;
+    height: 0;
+    transform: rotate(90deg);
+    position: absolute;
+    border: 70px solid green;
+    top: 80px;
+    left: 80px;
+    border-right-color: transparent;
+    border-top-color: transparent;
+}
